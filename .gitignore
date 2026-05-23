@@ -1,0 +1,35 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Unity generated folders, if full Unity projects are added later
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# Keep curated portfolio builds committed under games/*/Build
+!games/
+!games/*/
+!games/*/Build/
+!games/*/Build/**
+
+# Visual Studio / Rider
+.vs/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Unity crash/debug output
+*_BurstDebugInformation_DoNotShip/
