@@ -1,6 +1,6 @@
 # Unity Game Portfolio
 
-Unity와 C#으로 만든 2D 게임 결과물을 Windows 실행 빌드와 구현 문서로 정리한 포트폴리오입니다.
+Unity와 C#으로 만든 2D 게임 결과물을 Windows Release 빌드와 구현 문서로 정리한 포트폴리오입니다.
 
 ![VamGame cover](docs/assets/vamgame-cover.png)
 
@@ -51,17 +51,20 @@ Unity와 C#으로 만든 2D 게임 결과물을 Windows 실행 빌드와 구현 
 
 | Project | Genre | Build | Detail | Main Points |
 | --- | --- | --- | --- | --- |
-| VamGame | 2D action survival | `games/vamgame/Build/VamGame/vam.exe` | [docs/vamgame.md](docs/vamgame.md) | 플레이어 성장, 적 스폰, 무기/아이템, 오브젝트 풀링 |
-| subakgame | Casual game build | `games/subakgame/Build/subakgame/subakgame.exe` | [docs/subakgame.md](docs/subakgame.md) | Unity Windows 실행 빌드 |
+| VamGame | 2D action survival | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/vamgame-windows.zip) | [docs/vamgame.md](docs/vamgame.md) | 플레이어 성장, 적 스폰, 무기/아이템, 오브젝트 풀링 |
+| subakgame | Casual game build | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/subakgame-windows.zip) | [docs/subakgame.md](docs/subakgame.md) | Unity Windows 실행 빌드 |
 
 ## Run / 실행
 
-Windows에서 각 게임 폴더의 실행 파일을 실행합니다.
+GitHub Release에서 ZIP을 내려받아 압축을 푼 뒤 Windows 실행 파일을 실행합니다.
 
 ```text
-games/vamgame/Build/VamGame/vam.exe
-games/subakgame/Build/subakgame/subakgame.exe
+VamGame/vam.exe
+subakgame/subakgame.exe
 ```
+
+- [Windows Game Builds 2026.06](https://github.com/jiyoon99/unity-game-portfolio/releases/tag/builds-2026.06)
+- [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ## Project Structure / 프로젝트 구조
 
@@ -70,11 +73,9 @@ unity-game-portfolio/
 ├── games/
 │   ├── vamgame/
 │   │   ├── README.md
-│   │   ├── VamGame.unitypackage
-│   │   └── Build/VamGame/
+│   │   └── VamGame.unitypackage
 │   └── subakgame/
-│       ├── README.md
-│       └── Build/subakgame/
+│       └── README.md
 ├── docs/
 │   ├── assets/
 │   ├── vamgame.md

@@ -35,16 +35,18 @@ Unity에서 플레이어 이동, 적 생성, 전투, 아이템, UI, 게임 결�
 
 ## Run / 실행
 
-Windows에서 아래 실행 파일을 실행합니다.
+GitHub Release에서 ZIP을 내려받아 압축을 푼 뒤 아래 실행 파일을 실행합니다.
 
 ```text
-Build/VamGame/vam.exe
+VamGame/vam.exe
 ```
+
+[VamGame Windows ZIP 다운로드](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/vamgame-windows.zip)
 
 ## Included Files / 포함 파일
 
 - `VamGame.unitypackage`: Unity 프로젝트 에셋 패키지
-- `Build/VamGame/`: Windows 실행 빌드
+- GitHub Release: Windows 실행 빌드
 
 ## Main Systems / 주요 시스템
 
@@ -78,11 +80,7 @@ Build/VamGame/vam.exe
 ```text
 vamgame/
 ├── README.md
-├── VamGame.unitypackage
-└── Build/
-    └── VamGame/
-        ├── vam.exe
-        └── vam_Data/
+└── VamGame.unitypackage
 ```
 
 ## Portfolio Summary / 포트폴리오 요약

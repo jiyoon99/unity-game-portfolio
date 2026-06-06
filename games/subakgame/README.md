@@ -24,15 +24,17 @@ Unity 학습 과정에서 프로젝트를 실행 가능한 Windows 빌드로 완
 
 ## Run / 실행
 
-Windows에서 아래 실행 파일을 실행합니다.
+GitHub Release에서 ZIP을 내려받아 압축을 푼 뒤 아래 실행 파일을 실행합니다.
 
 ```text
-Build/subakgame/subakgame.exe
+subakgame/subakgame.exe
 ```
+
+[subakgame Windows ZIP 다운로드](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/subakgame-windows.zip)
 
 ## Included Files / 포함 파일
 
-- `Build/subakgame/`: Windows 실행 빌드
+- GitHub Release: Windows 실행 빌드
 
 ## Tech Stack / 기술 스택
 
@@ -44,11 +46,7 @@ Build/subakgame/subakgame.exe
 
 ```text
 subakgame/
-├── README.md
-└── Build/
-    └── subakgame/
-        ├── subakgame.exe
-        └── subakgame_Data/
+└── README.md
 ```
 
 ## Portfolio Summary / 포트폴리오 요약

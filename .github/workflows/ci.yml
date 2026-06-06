@@ -1,0 +1,28 @@
+name: Portfolio Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Ensure generated builds are not tracked
+        run: |
+          if git ls-files | grep -E '(^|/)(Build|Builds)/'; then
+            echo "Unity build output must be published through GitHub Releases."
+            exit 1
+          fi
+      - name: Check required portfolio files
+        run: |
+          test -f README.md
+          test -f THIRD_PARTY_NOTICES.md
+          test -f games/vamgame/VamGame.unitypackage
+          test -f games/vamgame/README.md
+          test -f games/subakgame/README.md

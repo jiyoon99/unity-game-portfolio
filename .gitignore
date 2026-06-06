@@ -14,12 +14,6 @@ Thumbs.db
 [Uu]ser[Ss]ettings/
 MemoryCaptures/
 
-# Keep curated portfolio builds committed under games/*/Build
-!games/
-!games/*/
-!games/*/Build/
-!games/*/Build/**
-
 # Visual Studio / Rider
 .vs/
 *.csproj
