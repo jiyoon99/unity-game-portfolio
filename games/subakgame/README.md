@@ -6,7 +6,7 @@
 
 상세 포트폴리오 문서: [docs/subakgame.md](../../docs/subakgame.md)
 
-## Project Summary
+## Project Summary / 프로젝트 요약
 
 | Item | Description |
 | --- | --- |
@@ -16,13 +16,13 @@
 | Language | C# |
 | Build | Windows executable |
 
-## Why I Included This
+## Why I Included This / 포함한 이유
 
 Unity 학습 과정에서 프로젝트를 실행 가능한 Windows 빌드로 완성한 결과물이기 때문에 포트폴리오 저장소에 포함했습니다.
 
 현재는 원본 Unity 프로젝트보다 빌드 결과물이 중심이라, 실행 파일과 Data 폴더를 보존하고 실행 방법을 명확히 정리했습니다.
 
-## Run
+## Run / 실행
 
 Windows에서 아래 실행 파일을 실행합니다.
 
@@ -30,17 +30,17 @@ Windows에서 아래 실행 파일을 실행합니다.
 Build/subakgame/subakgame.exe
 ```
 
-## Included Files
+## Included Files / 포함 파일
 
 - `Build/subakgame/`: Windows 실행 빌드
 
-## Tech Stack
+## Tech Stack / 기술 스택
 
 - Unity
 - C#
 - Windows Build
 
-## Project Structure
+## Project Structure / 프로젝트 구조
 
 ```text
 subakgame/
@@ -51,17 +51,17 @@ subakgame/
         └── subakgame_Data/
 ```
 
-## Portfolio Summary
+## Portfolio Summary / 포트폴리오 요약
 
 Unity 학습 과정에서 완성 빌드까지 만들어 본 게임 프로젝트입니다. 실행 파일과 Unity Data 폴더를 포함하고 있어 Windows 환경에서 바로 플레이할 수 있습니다.
 
-## What I Learned
+## What I Learned / 배운 점
 
 - Unity 프로젝트를 Windows 실행 빌드로 내보내는 과정
 - 실행 파일과 Data 폴더가 함께 있어야 Unity 빌드가 동작한다는 점
 - 포트폴리오에는 빌드 결과물뿐 아니라 스크린샷과 플레이 설명이 필요하다는 점
 
-## To Improve
+## To Improve / 개선할 점
 
 - 플레이 화면 스크린샷 추가
 - 게임 규칙과 조작법 보강

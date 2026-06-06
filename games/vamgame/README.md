@@ -6,7 +6,7 @@
 
 상세 포트폴리오 문서: [docs/vamgame.md](../../docs/vamgame.md)
 
-## Project Summary
+## Project Summary / 프로젝트 요약
 
 | Item | Description |
 | --- | --- |
@@ -17,13 +17,13 @@
 | Build | Windows executable |
 | Package | `VamGame.unitypackage` 포함 |
 
-## Why I Built This
+## Why I Built This / 제작 배경
 
 Unity에서 플레이어 이동, 적 생성, 전투, 아이템, UI, 게임 결과 화면까지 하나의 플레이 흐름으로 연결하는 연습을 하기 위해 만들었습니다.
 
 단순히 캐릭터를 움직이는 데모가 아니라, 적이 생성되고 플레이어가 생존하며 성장하는 반복 플레이 구조를 만드는 데 초점을 두었습니다.
 
-## Key Features
+## Key Features / 주요 기능
 
 - 플레이어 이동과 생존 처리
 - 적 생성과 추적
@@ -33,7 +33,7 @@ Unity에서 플레이어 이동, 적 생성, 전투, 아이템, UI, 게임 결�
 - 게임 결과 화면
 - 오브젝트 풀링 기반 생성 관리
 
-## Run
+## Run / 실행
 
 Windows에서 아래 실행 파일을 실행합니다.
 
@@ -41,12 +41,12 @@ Windows에서 아래 실행 파일을 실행합니다.
 Build/VamGame/vam.exe
 ```
 
-## Included Files
+## Included Files / 포함 파일
 
 - `VamGame.unitypackage`: Unity 프로젝트 에셋 패키지
 - `Build/VamGame/`: Windows 실행 빌드
 
-## Main Systems
+## Main Systems / 주요 시스템
 
 - 플레이어 이동과 생존 처리
 - 적 생성과 추적
@@ -54,7 +54,7 @@ Build/VamGame/vam.exe
 - 레벨업과 HUD
 - 오브젝트 풀링 기반 생성 관리
 
-## Core Scripts
+## Core Scripts / 핵심 스크립트
 
 - `Player`
 - `Enemy`
@@ -65,7 +65,7 @@ Build/VamGame/vam.exe
 - `HUD`
 - `GameResult`
 
-## Tech Stack
+## Tech Stack / 기술 스택
 
 - Unity
 - C#
@@ -73,7 +73,7 @@ Build/VamGame/vam.exe
 - Object Pooling
 - Windows Build
 
-## Project Structure
+## Project Structure / 프로젝트 구조
 
 ```text
 vamgame/
@@ -85,17 +85,17 @@ vamgame/
         └── vam_Data/
 ```
 
-## Portfolio Summary
+## Portfolio Summary / 포트폴리오 요약
 
 Unity의 2D 게임 루프, 적 스폰, 성장 시스템, UI 흐름을 학습하며 만든 생존형 액션 게임입니다. 반복 생성되는 적과 투사체를 관리하기 위해 풀링 구조를 사용했고, 플레이어 성장과 결과 화면까지 하나의 플레이 흐름으로 구성했습니다.
 
-## Asset Preview
+## Asset Preview / 에셋 미리보기
 
 | Enemy | Bullet | Tile Palette |
 | --- | --- | --- |
 | ![Enemy prefab](../../docs/assets/vamgame/Assets-Prefabs-Enemy.prefab.png) | ![Bullet prefab](../../docs/assets/vamgame/Assets-Prefabs-Bullet-0.prefab.png) | ![Tile palette](../../docs/assets/vamgame/Assets-Tile-New-Palette.prefab.png) |
 
-## What I Learned
+## What I Learned / 배운 점
 
 - Unity에서 플레이어, 적, 무기, UI를 하나의 게임 흐름으로 연결하는 방식
 - 반복 생성되는 오브젝트를 관리할 때 풀링 구조가 필요한 이유
