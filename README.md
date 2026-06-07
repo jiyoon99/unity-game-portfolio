@@ -1,72 +1,72 @@
 # Unity Game Portfolio
 
-Unity와 C#으로 만든 2D 게임 결과물을 Windows Release 빌드와 구현 문서로 정리한 포트폴리오입니다.
+Unity와 C#으로 제작한 2D 게임 두 개를 Windows 실행 빌드, Unity package, 구현 문서와 함께 정리한 저장소입니다.
 
 ![VamGame cover](docs/assets/vamgame-cover.png)
 
-## Problem / 문제
+## Included Games / 포함 게임
 
-- Unity 프로젝트는 시간이 지나면 빌드 파일, Unity package, 에셋, 문서가 섞이기 쉽습니다.
-- GitHub 언어 통계에는 Unity가 아니라 C# 중심으로 표시되기 때문에 게임 개발 경험을 README에서 명확히 설명해야 합니다.
-- 실행 가능한 결과물과 구현 포인트를 분리해 보여줄 필요가 있습니다.
-
-## Solution / 해결 방법
-
-- 게임별 폴더를 분리했습니다.
-- Windows 실행 빌드와 상세 문서를 함께 제공합니다.
-- `VamGame`은 Unity package와 구현 포인트를 문서화했습니다.
-- `subakgame`은 보관된 Windows 실행 빌드 중심으로 정리했습니다.
-
-## Tech Stack / 기술 스택
-
-| Area | Stack |
-| --- | --- |
-| Engine | Unity |
-| Language | C# |
-| Build target | Windows |
-| Game type | 2D action, survival, casual game |
-| Documentation | Markdown |
-
-## Skills / 구현 역량
-
-- Unity C# 2D 게임 개발
-- 플레이어 이동과 생존 처리
-- 적 스폰과 추적
-- 무기와 총알 처리
-- 아이템 및 장비 시스템
-- 레벨업과 HUD 구성
-- 오브젝트 풀링 기반 생성 관리
-- Windows 실행 빌드 정리
-- 게임별 README와 문서 작성
-
-## Project Gallery / 프로젝트 갤러리
+| 게임 | 형태 | 구현 내용 | 실행 파일 |
+| --- | --- | --- | --- |
+| VamGame | 2D 생존 액션 | 플레이어 이동, 적 추적·스폰, 무기·총알, 아이템, 레벨업, HUD, object pooling | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/vamgame-windows.zip) |
+| subakgame | 캐주얼 게임 | Windows 실행 빌드와 프로젝트 설명 자료 | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/subakgame-windows.zip) |
 
 | VamGame | subakgame |
 | --- | --- |
 | ![VamGame cover](docs/assets/vamgame-cover.png) | ![subakgame cover](docs/assets/subakgame-cover.png) |
-| 2D 생존 액션 게임 | Windows 실행 빌드 |
 | [상세 문서](docs/vamgame.md) | [상세 문서](docs/subakgame.md) |
 
-## Included Projects / 포함 프로젝트
+## VamGame Features / VamGame 기능
 
-| Project | Genre | Build | Detail | Main Points |
-| --- | --- | --- | --- | --- |
-| VamGame | 2D action survival | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/vamgame-windows.zip) | [docs/vamgame.md](docs/vamgame.md) | 플레이어 성장, 적 스폰, 무기/아이템, 오브젝트 풀링 |
-| subakgame | Casual game build | [Windows ZIP](https://github.com/jiyoon99/unity-game-portfolio/releases/download/builds-2026.06/subakgame-windows.zip) | [docs/subakgame.md](docs/subakgame.md) | Unity Windows 실행 빌드 |
+- 키보드 입력 기반 플레이어 이동과 생존 상태 처리
+- 플레이어 위치를 기준으로 한 적 추적과 단계별 스폰
+- 무기별 공격 주기와 총알 생성·이동·충돌 처리
+- 경험치 아이템 획득과 레벨업 선택 흐름
+- 장비와 능력치가 전투에 반영되는 성장 구조
+- 체력, 경험치, 레벨, 시간을 표시하는 HUD
+- 반복 생성되는 적과 투사체를 위한 object pooling
+- 타일맵과 prefab을 사용한 2D 맵·오브젝트 구성
+
+## Development / 개발 방식
+
+게임 동작을 플레이어, 적, 무기, 투사체, 아이템, 게임 관리 영역으로 나누고 Unity component lifecycle에 맞춰 연결했습니다.
+
+```text
+Input
+  ↓
+Player movement and state
+  ↓
+Enemy spawn and tracking
+  ↓
+Weapon / projectile collision
+  ↓
+Item pickup and level progression
+  ↓
+HUD update
+```
+
+빈번하게 생성·삭제되는 적과 투사체는 object pool에서 재사용하도록 구성했습니다. 실행 가능한 Windows 빌드는 GitHub Release로 분리하고, 재사용 가능한 VamGame 프로젝트 내용은 `VamGame.unitypackage`로 보관했습니다.
+
+## Tech Stack / 기술 스택
+
+| 영역 | 기술 |
+| --- | --- |
+| Engine | Unity |
+| Language | C# |
+| Rendering | Unity 2D, Tilemap, Sprite |
+| Runtime | Windows build |
+| Distribution | GitHub Release, Unity package |
 
 ## Run / 실행
 
-GitHub Release에서 ZIP을 내려받아 압축을 푼 뒤 Windows 실행 파일을 실행합니다.
+[Windows Game Builds 2026.06](https://github.com/jiyoon99/unity-game-portfolio/releases/tag/builds-2026.06)에서 ZIP을 내려받아 실행합니다.
 
 ```text
 VamGame/vam.exe
 subakgame/subakgame.exe
 ```
 
-- [Windows Game Builds 2026.06](https://github.com/jiyoon99/unity-game-portfolio/releases/tag/builds-2026.06)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-## Project Structure / 프로젝트 구조
+## Repository Structure / 저장소 구조
 
 ```text
 unity-game-portfolio/
@@ -74,27 +74,18 @@ unity-game-portfolio/
 │   ├── vamgame/
 │   │   ├── README.md
 │   │   └── VamGame.unitypackage
-│   └── subakgame/
-│       └── README.md
+│   └── subakgame/README.md
 ├── docs/
 │   ├── assets/
 │   ├── vamgame.md
 │   └── subakgame.md
-├── .gitignore
-└── README.md
+└── THIRD_PARTY_NOTICES.md
 ```
 
-## VamGame Implementation Points / VamGame 구현 포인트
+## Asset Preview / 에셋 미리보기
 
-- 플레이어 이동과 생존 처리
-- 적 생성과 추적
-- 무기와 총알 처리
-- 아이템 및 장비 시스템
-- 레벨업과 HUD
-- 오브젝트 풀링 기반 생성 관리
-
-## Assets Preview / 에셋 미리보기
-
-| Enemy | Bullet | Tile Palette |
+| Enemy prefab | Bullet prefab | Tile palette |
 | --- | --- | --- |
 | ![Enemy prefab](docs/assets/vamgame/Assets-Prefabs-Enemy.prefab.png) | ![Bullet prefab](docs/assets/vamgame/Assets-Prefabs-Bullet-0.prefab.png) | ![Tile palette](docs/assets/vamgame/Assets-Tile-New-Palette.prefab.png) |
+
+사용한 외부 에셋 정보는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 정리했습니다.
